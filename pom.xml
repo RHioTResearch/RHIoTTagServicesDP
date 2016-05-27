@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2016 Red Hat, Inc. and/or its affiliates.
+  ~
+  ~ Licensed under the Apache License version 2.0, available at http://www.apache.org/licenses/LICENSE-2.0
+  -->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.jboss.rhiot.beacon</groupId>
+    <artifactId>rhiot-tag-servicesDP</artifactId>
+    <version>1.0.0</version>
+
+    <name>RHIoTTag Services Deployment Package</name>
+    <description>Services related to the RHIoTTag custom beacon</description>
+    <packaging>deployment-package</packaging>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven-bundle-plugin.version>3.0.1</maven-bundle-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.rhiot.ble</groupId>
+            <artifactId>core-ble-scanner</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.rhiot.beacon</groupId>
+            <artifactId>rhiot-tag-services</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.organicelement</groupId>
+                <artifactId>deployment-package-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <version>1.0.0-SNAPSHOT</version>
+                <configuration>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+

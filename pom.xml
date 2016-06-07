@@ -10,15 +10,15 @@
 
     <groupId>org.jboss.rhiot.beacon</groupId>
     <artifactId>rhiot-tag-servicesDP</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.10</version>
 
     <name>RHIoTTag Services Deployment Package</name>
     <description>Services related to the RHIoTTag custom beacon</description>
     <packaging>deployment-package</packaging>
 
     <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.7</maven.compiler.source>
         <maven-bundle-plugin.version>3.0.1</maven-bundle-plugin.version>
     </properties>
 
@@ -26,13 +26,20 @@
         <dependency>
             <groupId>org.jboss.rhiot.ble</groupId>
             <artifactId>core-ble-scanner</artifactId>
-            <version>1.1.0-SNAPSHOT</version>
+            <version>1.1.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.rhiot.beacon</groupId>
             <artifactId>rhiot-tag-services</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+<!--
+        <dependency>
+            <groupId>org.jboss.rhiot.game</groupId>
+            <artifactId>gateway-tags</artifactId>
             <version>1.0.0</version>
         </dependency>
+-->
     </dependencies>
 
     <build>

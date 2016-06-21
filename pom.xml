@@ -10,7 +10,7 @@
 
     <groupId>org.jboss.rhiot.beacon</groupId>
     <artifactId>rhiot-tag-servicesDP</artifactId>
-    <version>1.0.20</version>
+    <version>1.0.21</version>
 
     <name>RHIoTTag Services Deployment Package</name>
     <description>Services related to the RHIoTTag custom beacon</description>
@@ -26,12 +26,12 @@
         <dependency>
             <groupId>org.jboss.rhiot.ble</groupId>
             <artifactId>core-ble-scanner</artifactId>
-            <version>1.1.8</version>
+            <version>1.1.10</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.rhiot.beacon</groupId>
             <artifactId>rhiot-tag-services</artifactId>
-            <version>1.0.11</version>
+            <version>1.0.12</version>
         </dependency>
     </dependencies>
 

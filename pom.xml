@@ -10,7 +10,7 @@
 
     <groupId>org.jboss.rhiot.beacon</groupId>
     <artifactId>rhiot-tag-servicesDP</artifactId>
-    <version>1.0.22</version>
+    <version>1.0.23</version>
 
     <name>RHIoTTag Services Deployment Package</name>
     <description>Services related to the RHIoTTag custom beacon</description>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.jboss.rhiot.beacon</groupId>
             <artifactId>rhiot-tag-services</artifactId>
-            <version>1.0.13</version>
+            <version>1.0.14</version>
         </dependency>
     </dependencies>
 
